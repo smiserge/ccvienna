@@ -29,8 +29,10 @@ public class Main {
         
         HttpsClient client = new HttpsClient();
         FileWriter myWriter = null;
+        String subsFileName = "/Users/serge/subtitles.srt";
+        System.out.println("Writing subtitles to the file " + subsFileName);
         try {
-            myWriter = new FileWriter("/Users/serge/subtitles.srt");
+            myWriter = new FileWriter(subsFileName);
         } catch (IOException ex) {
             //Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
